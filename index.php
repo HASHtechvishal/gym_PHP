@@ -7,7 +7,7 @@
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="assets/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="assets/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
@@ -68,7 +68,7 @@
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="Image">
+                <img class="img-fluid mb-4 mb-lg-0" src="assets/img/about.jpg" alt="Image">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-4 font-weight-bold mb-4">10 Years Experience</h2>
@@ -140,7 +140,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-1.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="assets/img/feature-1.jpg" alt="Image">
                         <i class="flaticon-barbell"></i>
                     </div>
                     <div class="col-sm-7">
@@ -152,7 +152,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-2.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="assets/img/feature-2.jpg" alt="Image">
                         <i class="flaticon-training"></i>
                     </div>
                     <div class="col-sm-7">
@@ -164,7 +164,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-3.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="assets/img/feature-3.jpg" alt="Image">
                         <i class="flaticon-trends"></i>
                     </div>
                     <div class="col-sm-7">
@@ -176,7 +176,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-4.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="assets/img/feature-4.jpg" alt="Image">
                         <i class="flaticon-support"></i>
                     </div>
                     <div class="col-sm-7">
@@ -533,7 +533,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <img class="card-img-top" src="assets/img/team-1.jpg" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -548,7 +548,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <img class="card-img-top" src="assets/img/team-2.jpg" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -563,7 +563,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-3.jpg" alt="">
+                    <img class="card-img-top" src="assets/img/team-3.jpg" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -578,7 +578,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-4.jpg" alt="">
+                    <img class="card-img-top" src="assets/img/team-4.jpg" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -611,7 +611,7 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-1.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="assets/img/testimonial-1.jpg" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -623,7 +623,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-2.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="assets/img/testimonial-2.jpg" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -635,7 +635,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-3.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="assets/img/testimonial-3.jpg" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -670,7 +670,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-1.jpg" alt="Image">
+                <img class="img-fluid mb-4" src="assets/img/blog-1.jpg" alt="Image">
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
                         <small>01</small>
@@ -690,7 +690,7 @@
                 <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-2.jpg" alt="Image">
+                <img class="img-fluid mb-4" src="assets/img/blog-2.jpg" alt="Image">
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
                         <small>01</small>
@@ -715,74 +715,7 @@
 
 
     <!-- Footer Start -->
-    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Quick Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Popular Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Opening Hours</h4>
-                <h5 class="text-white">Monday - Friday</h5>
-                <p>8.00 AM - 8.00 PM</p>
-                <h5 class="text-white">Saturday - Sunday</h5>
-                <p>2.00 PM - 8.00 PM</p>
-            </div>
-        </div>
-        <div class="container border-top border-dark pt-5">
-            <p class="m-0 text-center text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    <?php
+    include('includes/footer.php');
+    ?>
+    <!-- Footer end -->

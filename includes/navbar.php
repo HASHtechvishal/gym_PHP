@@ -1,6 +1,6 @@
 <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Gymnast</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -14,7 +14,7 @@
                     <a href="class.php" class="nav-item nav-link">Classes</a>
                     <a href="" class="nav-item nav-link">Admin/User</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blogs</a>
                         <div class="dropdown-menu text-capitalize">
                             <a href="blog.php" class="dropdown-item">Blog Grid</a>
                             <a href="single.php" class="dropdown-item">Blog Detail</a>
