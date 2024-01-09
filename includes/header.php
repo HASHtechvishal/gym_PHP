@@ -18,6 +18,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="assets/css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-white">

@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Registration Form | gym_php </title>
+    <title> login Form | gym_php </title>
     <link rel="stylesheet" href="assets/css/style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="container">
-    <div class="title">Registration</div>
+    <div class="title">Login</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -58,8 +58,8 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Register">
-          <span>Already joined <a href="login.php">login</a></span>
+          <input type="submit" value="Login">
+          <span>Not a member <a href="admin_user.php">Register</a></span>
         </div>
       </form>
     </div>
