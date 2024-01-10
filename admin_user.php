@@ -1,4 +1,4 @@
-
+<?php require 'config/function.php'; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,7 +11,7 @@
   <div class="container">
     <div class="title">Registration <a href="index.php">HOME</a></div>
     <div class="content">
-      <?php //require 'config/function.php'; alertMessage(); ?>
+      <?php alertMessage(); ?>
       <form action="codes/login_form.php" method="post">
         <div class="user-details">
           <div class="input-box">
@@ -32,11 +32,11 @@
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" id="password" name="password" placeholder="Enter your password" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" id="cPass" name="cPass" placeholder="Confirm your password" required>
+            <input type="password" id="cPass" name="cPass" placeholder="Confirm your password" required>
           </div>
         </div>
         <div class="gender-details">
