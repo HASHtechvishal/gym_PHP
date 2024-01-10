@@ -7,11 +7,8 @@ define('DB_DATABASE','gym_php');
 
 $conn = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
-if(isset($conn)){
-    die("connection failed: " . mysqli_connect_error());
-    //echo("yes");
-}else{
-    echo("no");
+if(!$conn){
+    echo("not connected");
 }
 
 ?>

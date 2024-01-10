@@ -8,7 +8,7 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">Login</div>
+    <div class="title">Login <a href="index.php">HOME</a> </div> 
     <div class="content">
       <form action="#">
         <div class="user-details">

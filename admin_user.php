@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,39 +9,40 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">Registration</div>
+    <div class="title">Registration <a href="index.php">HOME</a></div>
     <div class="content">
-      <form action="#">
+      <?php //require 'config/function.php'; alertMessage(); ?>
+      <form action="codes/login_form.php" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" id="fName" name="fName" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" id="uName" name="uName" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" id="number" name="number" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="text" id="password" name="password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="text" id="cPass" name="cPass" placeholder="Confirm your password" required>
           </div>
         </div>
         <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
+          <input type="radio" name="role" id="dot-1" value="admin">
+          <input type="radio" name="role" id="dot-2" value="user">
+          <input type="radio" name="role" id="dot-3" value="guest">
           <span class="gender-title">Roles</span>
           <div class="category">
             <label for="dot-1">
@@ -58,7 +60,7 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Register">
+          <input type="submit" name="save" value="Register">
           <span>Already joined <a href="login.php">login</a></span>
         </div>
       </form>
