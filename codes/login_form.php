@@ -16,11 +16,17 @@ if(isset($_POST['save'])){
 
         if($emailCheck){ 
             if(mysqli_num_rows($emailCheck) >0){
-                redirect('admins-create.php','Email already used by another user');
+                redirect('../admin_user.php','Email already used by another user');
             }
         }
+
+        if($password == $ConfirmPassword){
+            $bcrypt_password = password_hash($password, PASSWORD_BCRYPT);
+        }else{
+            redirect('../admin_user.php','Password and Confirm password are not same');
+        }
         
-        $bcrypt_password = password_hash($password, PASSWORD_BCRYPT);
+        //$bcrypt_password = password_hash($password, PASSWORD_BCRYPT);
 
         $data = [
             'fullname'=>$fullname,
@@ -37,11 +43,11 @@ if(isset($_POST['save'])){
         if($result){
             redirect('../login.php','admin create successfully');
         }else{
-            redirect('admins-create.php','please fill required fields');
+            redirect('../admin_user.php','please fill required fields');
         }
 
     }else{
-        redirect('admins-create.php','Please fill required fields');
+        redirect('../admin_user.php','Please fill required fields');
     }
 
 }
