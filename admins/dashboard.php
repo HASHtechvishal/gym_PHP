@@ -1,5 +1,6 @@
 ﻿<?php
 include('admin_includes/header.php');
+include('../config/function.php');
 ?>
    
      <!-- MENU SECTION END-->
@@ -157,70 +158,57 @@ include('admin_includes/header.php');
                   <div class="col-md-8 col-sm-8 col-xs-12">
                       <div class="panel panel-success">
                         <div class="panel-heading">
-                           Responsive Table Example
+                           Admins Table
+                           <?php //alertMessage(); ?>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>ID</th>
                                             <th>First Name</th>
-                                            <th>Last Name</th>
                                             <th>Username</th>
-                                             <th>User No.</th>
+                                            <th>Email</th>
+                                            <th>Phone No.</th>
+                                            <th>Role</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>100090</td>
-                                        </tr>
-                                         <tr>
-                                            <td>4</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>100090</td>
-                                        </tr>
-                                          <tr>
-                                            <td>7</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>100090</td>
-                                        </tr>
+                                        <?php
+                                        $admins = getAll('admins');
+                                        if(!$admins){
+                                            echo '<h4>Something Went</h4>';
+                                        }
+                                        if(mysqli_num_rows($admins) > 0){
+                                        ?>    
+                                        <?php foreach($admins as $adminItem){ ?>
+
+                                            <tr>
+                                            <td><?= $adminItem['id']?></td>
+                                            <td><?= $adminItem['fullname']?></td>
+                                            <td><?= $adminItem['username']?></td>
+                                            <td><?= $adminItem['email']?></td>
+                                            <td><?= $adminItem['phone']?></td>
+                                            <td><?= $adminItem['role']?></td>
+                                            <td> 
+                                                <a href="admins-edit.php?id=<?= $adminItem['id']?>">Edit</a>||
+                                                <a href="admins-delete.php?id=<?= $adminItem['id']?>">Delete</a>
+                                            </td>
+                                            </tr>
+                                        <?php }?>
+                                        <?php    
+                                        }else{
+                                        ?>    
+                                            <tr>
+                                            <td>No Record Found</td>
+                                            </tr>
+
+                                        <?php    
+                                        }
+                                        ?>
+
                                     </tbody>
                                 </table>
                             </div>

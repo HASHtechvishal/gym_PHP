@@ -51,4 +51,41 @@ if(isset($_POST['save'])){
     }
 
 }
+
+//edit
+if (isset($_POST['update'])) {
+
+    $adminId = validate($_POST['adminId']);
+
+    $adminData = getById('admins', $adminId);
+    if($adminData['status'] != 200){
+        redirect('admins-edit.php?id='.$adminId,'Please fill required fields');
+    }
+    $fullname = validate($_POST['fName']);
+    $email = validate($_POST['email']);
+    $phoneNumber = validate($_POST['number']);
+
+   /* if($password != ''){
+        $hashPass = password_hash($password,PASSWORD_BCRYPT);
+    }else{
+        $hashPass = $adminData['data']['password'];
+    }*/
+
+    if($fullname != '' && $email != '' && $phoneNumber != ''){
+        $data = [
+            'fullname'=>$fullname,
+            'email'=>$email,
+            'phone'=>$phoneNumber,
+        ];
+        $result = update('admins', $adminId, $data);
+
+        if($result){
+            redirect('../admins/dashboard.php','admin Update successfully');
+        }else{
+            redirect('admins-edit.php?id='.$adminId,'please fill required fields');
+        }
+    }else{
+        redirect('../admin_user.php','please fill required fields.');
+    }
+}
 ?>
