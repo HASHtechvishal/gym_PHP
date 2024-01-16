@@ -88,4 +88,50 @@ if (isset($_POST['update'])) {
         redirect('../admin_user.php','please fill required fields.');
     }
 }
+
+//login function
+
+if(isset($_POST['login'])){
+    $username = validate($_POST['username']);
+    $password = validate($_POST['password']);
+
+    if($username != '' && $password != ''){
+
+        $query = "SELECT * FROM admins WHERE username = '$username' LIMIT 1"; 
+        $result = mysqli_query($conn, $query);
+
+        if($result){
+            if(mysqli_num_rows($result) == 1){
+                $row = mysqli_fetch_assoc($result);
+                $hashPass = $row['password'];
+
+                if(!password_verify($password,$hashPass)){
+                    redirect('login.php','invalid password');
+                }
+
+                //if(code for role){}
+
+                $_SESSION['loggedId'] = true;
+                $_SESSION['loggedInUser'] = [
+                    'user_id' => $row['id'],
+                    'name' => $row['username'],
+                    'email' => $row['email'],
+                    'phone' => $row['phone'],
+                ];
+        //code for different roles
+        //if(isset($_SESSION['loggedIn']))  
+        //$_SESSION['loggedInUser']['username]      
+
+                redirect('../admins/dashboard.php','logged in successfully');
+
+            }else{
+                redirect('../login.php','invalid email address');
+            }
+        }else{
+            redirect('../login.php','something went wrong');
+        }
+    }else{
+        redirect('../login.php','all fields are imp');
+    }
+}
 ?>

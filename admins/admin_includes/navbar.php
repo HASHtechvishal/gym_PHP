@@ -14,7 +14,7 @@
             </div>
 
             <div class="right-div">
-                <a href="#" class="btn btn-danger pull-right">LOG ME OUT</a><br><br>
+                <a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a><br><br>
                 <a href="../index.php" class="btn btn-danger pull-right">view website</a>
             </div>
         </div>

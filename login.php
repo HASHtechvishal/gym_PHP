@@ -1,3 +1,10 @@
+<?php
+if(isset($_SESSION['loggedId'])){
+?>
+  <script>window.location.href = 'index.php'</script>
+<?php
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,23 +17,23 @@
   <div class="container">
     <div class="title">Login <a href="index.php">HOME</a> </div> 
     <div class="content">
-      <form action="#">
+      <form action="codes/login_form.php" method="post">
         <div class="user-details">
 
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" name="username" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
           </div>
           
         </div>
         <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
+          <input type="radio" name="gender" id="dot-1" value="admin">
+          <input type="radio" name="gender" id="dot-2" value="user">
+          <input type="radio" name="gender" id="dot-3" value="guest">
           <span class="gender-title">Roles</span>
           <div class="category">
             <label for="dot-1">
@@ -44,7 +51,7 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Login">
+          <input type="submit" name="login" value="Login">
           <span>Not a member <a href="admin_user.php">Register</a></span>
         </div>
       </form>
