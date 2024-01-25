@@ -10,12 +10,12 @@ if(isset($_SESSION['loggedId'])){
     if(musqli_num_rows($result) == 0){
 
         logoutSession();
-        redirect('../login','access denied');
+        redirect('../login.php','access denied');
     }else{
-        //$row = mysqli_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
         
     }
 }else{
-    redirect('../login.php','login to continue..');
+    redirect('../login.php','login to continue..'); 
 }
 ?>

@@ -52,7 +52,7 @@ if(isset($_POST['save'])){
 
 }
 
-//edit
+//edit 
 if (isset($_POST['update'])) {
 
     $adminId = validate($_POST['adminId']);
@@ -71,11 +71,25 @@ if (isset($_POST['update'])) {
         $hashPass = $adminData['data']['password'];
     }*/
 
+    //upload image code
+    if($_FILES['img'] > 0){
+        $path = "assets/uploade/admin_img";
+        $image_ext = pathinfo($_FILES['img']['name'], PATHINFO_EXTENSION);
+
+        $filename = time().'.'.$image_ext;
+        move_uploaded_file($_FILES['img']['tmp_name'], $path."/".$filename);
+
+        $finalImage = $filename;
+    }else{
+        $finalImage = '';
+    }
+
     if($fullname != '' && $email != '' && $phoneNumber != ''){
         $data = [
             'fullname'=>$fullname,
             'email'=>$email,
             'phone'=>$phoneNumber,
+            'image'=>$finalImage
         ];
         $result = update('admins', $adminId, $data);
 

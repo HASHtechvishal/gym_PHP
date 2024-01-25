@@ -48,7 +48,7 @@ include('../config/function.php');
                            Update Your Detalis
                         </div>
                         <div class="panel-body">
-                            <form action="../codes/login_form.php" method="post">    
+                            <form action="../codes/login_form.php" method="post" enctype="multipart/form-data">    
                             <input class="form-control" type="hidden" required name="adminId" value="<?=$adminData['data']['id']?>"/>                                    
                                  <div class="form-group">
                                             <label>Fullname</label>
@@ -60,6 +60,11 @@ include('../config/function.php');
                                             <input class="form-control" type="text" readonly value="<?=$adminData['data']['username']?>"/>
                                      <p class="help-block">Help text here.</p>
                                         </div>
+
+                                    <div class="form-group">
+                                            <label>Image</label>
+                                            <input class="form-control" type="file" id="img" name="img">
+                                </div>
                                 <div class="form-group">
                                             <label>Email</label>
                                             <input class="form-control" name="email" type="text" value="<?=$adminData['data']['email']?>"/>

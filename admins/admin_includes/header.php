@@ -23,5 +23,5 @@
 
 <?php
 include('admin_includes/navbar.php');
-require('codes/authentication.php');
+//require('codes/authentication.php');
 ?>
