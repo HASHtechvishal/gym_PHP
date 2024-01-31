@@ -24,11 +24,12 @@ include('../config/function.php');
                         </div>
                     </div>
               <div class="col-md-3 col-sm-3 col-xs-6">
-                      <div class="alert alert-success back-widget-set text-center">
+              <a href="layouts.php"><div class="alert alert-success back-widget-set text-center">
                             <i class="fa fa-bars fa-5x"></i>
-                            <h3>300+ Tasks</h3>
-                            Pending For New Events
+                            <h3>Layouts</h3>
+                            Manage Your Website
                         </div>
+               </a>         
                     </div>
                <div class="col-md-3 col-sm-3 col-xs-6">
                       <div class="alert alert-warning back-widget-set text-center">
@@ -155,6 +156,7 @@ include('../config/function.php');
                         </div>
      </div>
              </div>
+             
                   <div class="col-md-8 col-sm-8 col-xs-12">
                       <div class="panel panel-success">
                         <div class="panel-heading">

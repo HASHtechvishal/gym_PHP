@@ -77,9 +77,23 @@ function getAll($tableName, $status = NULL){
         $query = "SELECT * FROM $table WHERE status='0'";
     }else{
         $query = "SELECT * FROM $table";
+
     }
 
     return mysqli_query($conn, $query);
+}
+
+//get random data function
+
+function getDataRandom($tableName, $number){
+    global $conn;
+
+    $table = validate($tableName);
+    $num = validate($number);
+
+    $query = "SELECT * FROM $table ORDER BY RAND() LIMIT $num";
+    return mysqli_query($conn, $query);
+
 }
 
 //get data by id
